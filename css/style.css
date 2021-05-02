@@ -1,0 +1,842 @@
+:root {
+    --hf: 'Oswald', sans-serif;
+    --pf: 'Open Sans', sans-serif;
+    --hc: #353535;
+    --pc: #555555;
+    --lc: #0872b9;
+    --cl: #5bc5f4;
+    --sc: #f1f1f1;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clr {
+    clear: both;
+}
+
+img{
+    vertical-align: middle;
+}
+
+.full-wrapper {
+    width: 100%;
+}
+
+.conteiner {
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*common css end*/
+
+.sub-heading {
+    text-align: center;
+    position: relative;
+}
+
+.sub-heading h3 {
+    font-family: var(--hf);
+    font-weight: 500;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: var(--hc);
+
+}
+
+.sub-heading .line {
+    position: absolute;
+    left: 46.5%;
+    bottom: -5px;
+}
+
+.sub-heading .line-1 {
+    width: 47px;
+    height: 1px;
+    background: var(--lc);
+    display: inline-block;
+}
+
+.sub-heading .line-2 {
+    width: 3px;
+    height: 1px;
+    background: var(--lc);
+    display: inline-block;
+}
+
+.sub-heading .line-3 {
+    width: 2px;
+    height: 1px;
+    background: var(--lc);
+    display: inline-block;
+}
+
+.sub-heading .line-4 {
+    width: 1px;
+    height: 1px;
+    background: var(--lc);
+    display: inline-block;
+}
+
+
+/* sub heading end here */
+.ml-20 {
+    margin-left: 20px;
+}
+
+.mx-20 {
+    margin: 0px 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-15{
+    margin-bottom: 15px;
+}
+
+.mx-15 {
+    margin: 0px 15px;
+}
+
+
+/* speacing end here */
+
+.header-bg {
+    background: var(--lc);
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+.header-bg .header .header-text p {
+    width: 50%;
+    float: left;
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 14px;
+    color: #e7e7e7;
+}
+
+.header-bg .header .header-social {
+    width: 50%;
+    float: left;
+}
+
+.header-bg .header .header-social ul {
+    float: right;
+}
+
+.header-bg .header .header-social ul li {
+    float: left;
+}
+
+
+.header-bg .header .header-social ul li a i {
+    color: #e7e7e7;
+    padding-left: 27px;
+    transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+}
+
+.header-bg .header .header-social ul li:hover a i {
+    color: var(--hc);
+}
+
+/*header css end*/
+.menu-bg {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.menu-bg .menu .logo {
+    width: 80px;
+    float: left;
+}
+
+.menu-bg .menu .logo img {
+    width: 100%;
+}
+
+.menu-bg .menu .menu-list {
+    width: 860px;
+    float: left;
+}
+
+.menu-bg .menu .menu-list ul {
+    float: right;
+    padding-top: 14px;
+}
+
+.menu-bg .menu .menu-list ul li {
+    float: left;
+    padding-left: 16px;
+
+}
+
+.menu-bg .menu .menu-list ul li a {
+    color: var(--pc);
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+}
+
+.menu-bg .menu .menu-list ul li:hover a {
+    color: var(--lc);
+}
+
+/*menu  end here*/
+
+.banner-bg {
+    background: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+
+}
+
+.banner-bg::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+.banner-bg .banner .banner-text {
+    color: #fff;
+    text-align: right;
+}
+
+.banner-bg .banner .banner-text h2 {
+    text-transform: uppercase;
+    font-family: var(--hf);
+    font-weight: 400px;
+    font-size: 30px;
+    padding-top: 76px;
+}
+
+.banner-bg .banner .banner-text h1 {
+    text-transform: uppercase;
+    font-family: var(--hf);
+    font-weight: 700px;
+    font-size: 40px;
+    margin-top: -11px;
+}
+
+.banner-bg .banner .banner-text p {
+    font-family: var(--pf);
+    font-weight: 400px;
+    font-size: 13px;
+    padding-left: 480px;
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.banner-bg .banner .banner-text a {
+    font-family: var(--hf);
+    font-weight: 500;
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0px 17px;
+    margin: 25px 10px 88px;
+    position: relative;
+    transition: all linear 0.3s;
+    z-index: 1;
+
+}
+
+.banner-bg .banner .banner-text a:last-of-type {
+    margin-right: 0px;
+}
+
+.banner-bg .banner .banner-text a:hover {
+    /*    background: var(--lc);*/
+    border-color: var(--lc);
+
+}
+
+.banner-bg .banner .banner-text a::before {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--lc);
+    z-index: -1;
+    transition: all linear 0.3s;
+}
+
+.banner-bg .banner .banner-text a:hover::before {
+    width: 50%;
+}
+
+.banner-bg .banner .banner-text a::after {
+    content: '';
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: var(--lc);
+    z-index: -1;
+    transition: all linear 0.3s;
+}
+
+.banner-bg .banner .banner-text a:hover::after {
+    width: 50%;
+}
+
+/*banner part end here*/
+
+.about-bg {
+    padding-top: 50px;
+}
+
+.about-bg .about .sub-heading {
+    margin-bottom: 40px;
+}
+
+.about-bg .about .sub-heading .line {
+    left: 45%;
+}
+
+.about-bg .about .about-img {
+    width: 380px;
+}
+
+.about-bg .about .about-img img {
+    width: 100%;
+    float: left;
+}
+
+.about-bg .about .about-text {
+    width: 540px;
+    float: left;
+}
+
+.about-bg .about .about-text p {
+    font-family: var(--pf);
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--pc);
+    line-height: 24px;
+}
+
+.about-bg .about .about-text p:first-of-type {
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
+/*about part end here*/
+
+.service-bg {
+    padding-top: 50px;
+}
+
+.service-bg .service .sub-heading .line {
+    left: 43%;
+}
+
+.service-bg .service .sub-heading {
+    margin-bottom: 68px;
+}
+
+.service-bg .service .service-item {
+    width: 300px;
+    background: var(--sc);
+    position: relative;
+    float: left;
+}
+
+.service-bg .service .service-item:hover {
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.service-bg .service .service-item h4 {
+    font-family: var(--hf);
+    font-weight: 500px;
+    font-size: 16px;
+    color: var(--hc);
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 5px;
+}
+
+.service-bg .service .service-item p {
+    font-family: var(--pf);
+    font-weight: 400px;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--pc);
+    text-align: center;
+    padding-bottom: 13px;
+    padding: 0px 10px 13px;
+}
+
+.service-bg .service .service-item .circle-1 {
+    width: 69px;
+    height: 69px;
+    background: var(--sc);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 4;
+    transition: all linear 0.3s;
+    text-align: center;
+}
+
+.service-bg .service .service-item:hover .circle-1 {
+    background: var(--cl);
+
+}
+
+
+.service-bg .service .service-item .circle-1 img {
+    margin-top: 15px;
+}
+
+
+.service-bg .service .service-item .circle-2 {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid var(--sc);
+    background: #fff;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 2;
+    transition: all linear 0.3s;
+}
+
+.service-bg .service .service-item:hover .circle-2 {
+    border-color: var(--cl);
+}
+
+
+.service-bg .service .service-item .circle-3 {
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 1;
+}
+
+.gallery-bg {
+    padding-top: 60px;
+}
+
+.gallery-bg .gallery .sub-heading {
+    margin-bottom: 30px;
+}
+
+.gallery-bg .gallery .sub-heading .line {
+    left: 42.2%;
+}
+
+.gallery-bg .gallery .gallery-colum {
+    width: 220px;
+    float: left;
+}
+
+.gallery-bg .gallery .gallery-colum .gallery-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-bg .gallery .gallery-colum .gallery-item .overly {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    left: -100%;
+    top: 0;
+    transition: all linear 0.3s;
+}
+
+.gallery-bg .gallery .gallery-colum .gallery-item:hover .overly {
+    left: 0;
+}
+
+.gallery-bg .gallery .gallery-colum .gallery-item .overly .icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gallery-bg .gallery .gallery-colum .gallery-item .overly i {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    background: var(--cl);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+/*gallery part css end*/
+
+
+
+
+.trainer-bg {
+    padding-top: 50px;
+}
+
+
+.trainer-bg .trainer .trainer-content {
+    text-align: center;
+    overflow: hidden;
+    float: left;
+    margin-top: 30px;
+    background: var(--sc);
+}
+
+
+.trainer-bg .trainer .sub-heading .line {
+    left: 45%;
+}
+
+
+.trainer-bg .trainer .trainer-content .trainer-img {
+    width: 220px;
+    position: relative;
+}
+
+.trainer-bg .trainer .trainer-content .trainer-img:hover {
+    width: 220px;
+    position: relative;
+    box-shadow: 0px 0px 3px 1px rgb(0, 0, 0, 0.26);
+}
+
+
+.trainer-bg .trainer .trainer-content .trainer-img img {
+    width: 100%;
+}
+
+
+.trainer-bg .trainer .trainer-content .trainer-img .trainer-overly {
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    right: -80px;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    transition: all linear 0.3s;
+}
+
+.trainer-bg .trainer .trainer-content:hover .trainer-img .trainer-overly {
+    right: 0;
+}
+
+
+.trainer-bg .trainer .trainer-content .trainer-img .trainer-overly ul {
+    padding-top: 35px;
+}
+
+.trainer-bg .trainer .trainer-content .trainer-img .trainer-overly ul li {
+    padding-bottom: 15px;
+}
+
+.trainer-bg .trainer .trainer-content .trainer-img .trainer-overly li a i {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    line-height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    transition: all linear 0.3s;
+}
+
+.trainer-bg .trainer .trainer-content .trainer-img .trainer-overly li:hover a i {
+    background: var(--cl);
+    border-color: var(--cl);
+}
+
+.trainer-bg .trainer .trainer-content h4 {
+    font-family: var(--hf);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--hc);
+    transition: all linear 0.3s;
+    padding-top: 5px;
+
+}
+
+.trainer-bg .trainer .trainer-content:hover h4 {
+    color: var(--cl);
+}
+
+.trainer-bg .trainer .trainer-content p {
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--pc)
+}
+
+/*trainer css end*/
+
+.feedback-bg{
+    padding-top: 50px;
+}
+
+.feedback-bg .feedback .sub-heading .line{
+    left: 43.5%;
+}
+
+.feedback-bg .feedback .feedback-contain{
+    width: 460px;
+    margin-top: 30px;
+    text-align: center;
+    float: left;
+}
+
+.feedback-bg .feedback .feedback-contain .feedback-text{
+    margin-top: 40px;
+    background: var(--sc);
+    position: relative;
+    z-index: 10;
+}
+
+.feedback-bg .feedback .feedback-contain .feedback-text::before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: var(--sc);
+    position: absolute;
+    top: -15px;
+    left: 215px;
+    transform: rotate(45deg);
+    z-index: 5;
+}
+
+.feedback-bg .feedback .feedback-contain h3{
+    font-family: var(--hf);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--hc);
+    text-transform: uppercase;
+    padding-top: 17px;
+}
+.feedback-bg .feedback .feedback-contain li{
+    display: inline-block;
+    margin-left: -3px;
+    padding-top: 2px;
+}
+.feedback-bg .feedback .feedback-contain li i{
+    color: var(--cl);
+    font-size: 13px;
+}
+.feedback-bg .feedback .feedback-contain h5{
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--pc);
+    text-transform: capitalize;
+    padding-top: 3px;
+}
+
+.feedback-bg .feedback .feedback-contain p{
+    font-family: var(--hf);
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--pc);
+    line-height: 24px;
+    padding: 10px 15px 20px;
+}
+
+/*feeedback css end*/
+
+.footer-bg {
+    margin-top: 60px;
+    background: var(--hc);
+    padding: 20px 0px; 
+}
+
+.footer-bg .footer .footer-logo{
+    width: 220px;
+    float: left;
+}
+.footer-bg .footer h3{
+    font-family: var(--hf);
+    font-weight: 500px;
+    font-size: 16px;
+    color: #fff;
+    text-transform: capitalize;
+    padding-bottom: 31px;
+}
+
+.footer-bg .footer p{
+    font-family: var(--pf);
+    font-weight: 400px;
+    font-size: 13px;
+    color: #fff;
+    line-height: 24px;
+}
+.footer-bg .footer .footer-logo p:last-of-type{
+    padding-top: 35px;
+}
+
+.footer-bg .footer .footer-logo img{
+    padding-bottom: 12px;
+}
+
+
+
+.footer-bg .footer .footer-contact{
+    width: 220px;
+    float: left;
+}
+
+.footer-bg .footer .footer-contact ul li{
+   padding-bottom: 20px; 
+    position: relative;
+}
+.footer-bg .footer .footer-contact ul li:last-child{
+   padding-bottom: 0px; 
+}
+
+
+.footer-bg .footer .footer-contact ul li a{
+    color: #fff;
+    display: block;
+    padding-left: 45px;
+    font-family: var(--pf);
+    font-weight: 400px;
+    font-size: 13px;
+    color: #fff;
+}
+
+.footer-bg .footer .footer-contact ul li a:first-of-type{
+    padding-bottom: 5px;
+}
+
+.footer-bg .footer .footer-contact ul li i{
+    width: 35px;
+    height: 35px;
+    color: #fff;
+    background: var(--cl);
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+}
+
+
+
+
+.footer-bg .footer .footer-link{
+    width: 140px;
+    float: left;
+}
+
+.footer-bg .footer .footer-link ul{
+    width: 50%;
+    float: left;
+}
+
+.footer-bg .footer .footer-link ul li{
+    margin-bottom: 19px;
+}
+
+.footer-bg .footer .footer-link ul li:last-child{
+    margin-top: 0px;
+}
+
+.footer-bg .footer .footer-link ul li a{
+    font-family: var(--pf);
+    font-weight: 400px;
+    font-size: 13px;
+    color:#fff;
+    text-transform: capitalize;
+    transition: all linear 0.3s;
+}
+
+.footer-bg .footer .footer-link ul li:hover a{
+    color: var(--cl);
+}
+
+.footer-bg .footer .footer-gallery{
+    width: 300px;
+    float: left;
+}
+
+.footer-bg .footer .footer-gallery li{
+    width: 90px;
+    float: left;
+}
+.footer-bg .footer .footer-gallery li img{
+    width: 100%;
+}
+
+.fend-bg{
+    background: var(--pc);
+}
+.fend-bg .fend{
+    padding: 17px 0px;
+    
+}
+
+.fend-bg .fend p{
+    font-family: var(--pf);
+    font-weight: 400px;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+}
+/*fend css end here*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
